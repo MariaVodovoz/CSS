@@ -1,0 +1,73 @@
+@charset "UTF-8";
+ html {
+font-size:  1.2 em;
+line-height: 1.8em;
+height: 100%;
+
+ }
+
+ body {
+ height: 100%;
+ 
+ }
+
+ div {
+     width: 100%;
+     margin: 0 auto;
+     background-color: #eaeaea;
+     padding: 30px;
+     /* align-content: center; */
+ }
+
+   /* classes and id */
+   .redBG{
+       background-color: red;
+       color: #fff;
+       padding: 15px;
+   }
+
+   #resourceLink{
+       text-decoration: none;
+   }
+   /* atttribute selector */
+
+   a[href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators#General_sibling"] {
+       color: orange;
+   }
+ /* psuedo class/element */
+ #resourceLink:hover {
+     color: purple;
+ }
+
+ ul li:nth-child(4){
+     color:blue;
+ }
+ ul li:nth-child(even){
+     color:red;
+ }
+ /* combinators */
+
+ /* decendant combinator */
+ main em{
+     color:green;
+ }
+
+ /* diract child  */
+ p > em {
+     color:orange;
+ }
+
+  /* direct sibling */
+  h3 + p {
+    color: yellow;
+}
+ /* general sibling  */
+ h3 ~ p {
+     color:purple;
+ }
+
+
+
+  main section:first-of-type > h3 +p {
+      border: 1px solid #BADA55
+  }
